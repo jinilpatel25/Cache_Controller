@@ -1,0 +1,246 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 344 400)
+	(text "AssociativeCachedDramController" (rect 5 0 245 20)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 361 31 380)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Clock_Inverted" (rect 0 0 107 20)(font "Intel Clear" (font_size 8)))
+		(text "Clock_Inverted" (rect 21 27 128 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Clock" (rect 0 0 38 20)(font "Intel Clear" (font_size 8)))
+		(text "Clock" (rect 21 43 59 63)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Reset_L" (rect 0 0 55 20)(font "Intel Clear" (font_size 8)))
+		(text "Reset_L" (rect 21 59 76 79)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DramSelect_H" (rect 0 0 100 20)(font "Intel Clear" (font_size 8)))
+		(text "DramSelect_H" (rect 21 75 121 95)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "AddressBus[31..0]" (rect 0 0 127 20)(font "Intel Clear" (font_size 8)))
+		(text "AddressBus[31..0]" (rect 21 91 148 111)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "DataBusIn[15..0]" (rect 0 0 118 20)(font "Intel Clear" (font_size 8)))
+		(text "DataBusIn[15..0]" (rect 21 107 139 127)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "UDS_L" (rect 0 0 47 20)(font "Intel Clear" (font_size 8)))
+		(text "UDS_L" (rect 21 123 68 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "LDS_L" (rect 0 0 44 20)(font "Intel Clear" (font_size 8)))
+		(text "LDS_L" (rect 21 139 65 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "RW" (rect 0 0 23 20)(font "Intel Clear" (font_size 8)))
+		(text "RW" (rect 21 155 44 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "AS_L" (rect 0 0 35 20)(font "Intel Clear" (font_size 8)))
+		(text "AS_L" (rect 21 171 56 191)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 328 32)
+		(output)
+		(text "DRAM_CLK" (rect 0 0 77 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_CLK" (rect 230 27 307 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 32)(pt 312 32))
+	)
+	(port
+		(pt 328 48)
+		(output)
+		(text "DRAM_CKE" (rect 0 0 77 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_CKE" (rect 230 43 307 63)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 48)(pt 312 48))
+	)
+	(port
+		(pt 328 64)
+		(output)
+		(text "DRAM_CS_N" (rect 0 0 88 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_CS_N" (rect 219 59 307 79)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 64)(pt 312 64))
+	)
+	(port
+		(pt 328 80)
+		(output)
+		(text "DRAM_RAS_N" (rect 0 0 97 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_RAS_N" (rect 210 75 307 95)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 80)(pt 312 80))
+	)
+	(port
+		(pt 328 96)
+		(output)
+		(text "DRAM_CAS_N" (rect 0 0 97 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_CAS_N" (rect 210 91 307 111)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 96)(pt 312 96))
+	)
+	(port
+		(pt 328 112)
+		(output)
+		(text "DRAM_WE_N" (rect 0 0 92 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_WE_N" (rect 215 107 307 127)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 112)(pt 312 112))
+	)
+	(port
+		(pt 328 128)
+		(output)
+		(text "DRAM_ADDR[12..0]" (rect 0 0 135 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_ADDR[12..0]" (rect 172 123 307 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 128)(pt 312 128)(line_width 3))
+	)
+	(port
+		(pt 328 144)
+		(output)
+		(text "DRAM_BA[1..0]" (rect 0 0 105 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_BA[1..0]" (rect 202 139 307 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 144)(pt 312 144)(line_width 3))
+	)
+	(port
+		(pt 328 176)
+		(output)
+		(text "ResetOutTo68K" (rect 0 0 113 20)(font "Intel Clear" (font_size 8)))
+		(text "ResetOutTo68K" (rect 194 171 307 191)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 176)(pt 312 176))
+	)
+	(port
+		(pt 328 192)
+		(output)
+		(text "DRAM_LDQM" (rect 0 0 94 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_LDQM" (rect 213 187 307 207)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 192)(pt 312 192))
+	)
+	(port
+		(pt 328 208)
+		(output)
+		(text "DRAM_UDQM" (rect 0 0 96 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_UDQM" (rect 211 203 307 223)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 208)(pt 312 208))
+	)
+	(port
+		(pt 328 224)
+		(output)
+		(text "DataBusOut[15..0]" (rect 0 0 130 20)(font "Intel Clear" (font_size 8)))
+		(text "DataBusOut[15..0]" (rect 177 219 307 239)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 224)(pt 312 224)(line_width 3))
+	)
+	(port
+		(pt 328 240)
+		(output)
+		(text "CacheDtackTo68K_L" (rect 0 0 146 20)(font "Intel Clear" (font_size 8)))
+		(text "CacheDtackTo68K_L" (rect 161 235 307 255)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 240)(pt 312 240))
+	)
+	(port
+		(pt 328 256)
+		(output)
+		(text "WordAddress[2..0]" (rect 0 0 130 20)(font "Intel Clear" (font_size 8)))
+		(text "WordAddress[2..0]" (rect 177 251 307 271)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 256)(pt 312 256)(line_width 3))
+	)
+	(port
+		(pt 328 272)
+		(output)
+		(text "CacheState[4..0]" (rect 0 0 115 20)(font "Intel Clear" (font_size 8)))
+		(text "CacheState[4..0]" (rect 192 267 307 287)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 272)(pt 312 272)(line_width 3))
+	)
+	(port
+		(pt 328 288)
+		(output)
+		(text "DataCacheWE_L[7..0]" (rect 0 0 149 20)(font "Intel Clear" (font_size 8)))
+		(text "DataCacheWE_L[7..0]" (rect 158 283 307 303)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 288)(pt 312 288)(line_width 3))
+	)
+	(port
+		(pt 328 304)
+		(output)
+		(text "TagCacheWE_L[7..0]" (rect 0 0 142 20)(font "Intel Clear" (font_size 8)))
+		(text "TagCacheWE_L[7..0]" (rect 165 299 307 319)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 304)(pt 312 304)(line_width 3))
+	)
+	(port
+		(pt 328 320)
+		(output)
+		(text "CacheDataOut[15..0]" (rect 0 0 147 20)(font "Intel Clear" (font_size 8)))
+		(text "CacheDataOut[15..0]" (rect 160 315 307 335)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 320)(pt 312 320)(line_width 3))
+	)
+	(port
+		(pt 328 336)
+		(output)
+		(text "Valid_H[7..0]" (rect 0 0 89 20)(font "Intel Clear" (font_size 8)))
+		(text "Valid_H[7..0]" (rect 218 331 307 351)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 336)(pt 312 336)(line_width 3))
+	)
+	(port
+		(pt 328 352)
+		(output)
+		(text "ValidHit_H[7..0]" (rect 0 0 109 20)(font "Intel Clear" (font_size 8)))
+		(text "ValidHit_H[7..0]" (rect 198 347 307 367)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 352)(pt 312 352)(line_width 3))
+	)
+	(port
+		(pt 328 160)
+		(bidir)
+		(text "DRAM_DQ[15..0]" (rect 0 0 118 20)(font "Intel Clear" (font_size 8)))
+		(text "DRAM_DQ[15..0]" (rect 189 155 307 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 160)(pt 312 160)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 312 368))
+	)
+)
